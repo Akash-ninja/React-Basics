@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
+import Timer from './hooks/Timer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App appTitle={'Person Manager'}/>
+    {/* <App appTitle={'Person Manager'}/> */}
+    <Timer />
   </React.StrictMode>,
   document.getElementById('root')
 );
