@@ -62,7 +62,7 @@ export default function Timer() {
   };
 
   return (
-    <div className="App">
+    <div className="Timer">
       <h2> Stopwatch </h2>
       {/* Display the timer */}
       <h3>

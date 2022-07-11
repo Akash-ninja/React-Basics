@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import classes from "./App.module.css";
 import Persons from "../components/Persons/Persons";
 import Cockpit from "../components/Cockpit/Cockpit";
-import Aux from "../hoc/Aux";
+import Aux from "../hoc/ReactAux";
 import withClass from "../hoc/withClass";
 import AuthContext from "../context/auth-context";
 
