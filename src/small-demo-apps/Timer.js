@@ -23,12 +23,16 @@ export default function Timer() {
   const handleReset = () => {
     setTimerVal((state) => (state = 0));
 
-    let confirmation = window.confirm(
-      "Do you also want to reset Clocked time ?"
-    );
+    // prompt only if there is any logged time
+    if (logTime.length > 0) {
+      let confirmation = window.confirm(
+        "Do you also want to reset Clocked time ?"
+      );
 
-    if (confirmation) {
-      setLogTime((prev) => (prev = []));
+      if (confirmation) {
+        // empty the array
+        setLogTime((prev) => prev.splice(0, prev.length));
+      }
     }
   };
 

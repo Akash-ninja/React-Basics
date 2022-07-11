@@ -6,7 +6,7 @@ import Aux from "../hoc/Aux";
 import withClass from "../hoc/withClass";
 import AuthContext from "../context/auth-context";
 
-class App extends Component {
+class ClassComponentApp extends Component {
   constructor(props) {
     super(props);
     console.log("[App.js] constructor");
@@ -137,7 +137,7 @@ class App extends Component {
   }
 }
 
-export default withClass(App, classes.App);
+export default withClass(ClassComponentApp, classes.App);
 
 
 // Notes:
