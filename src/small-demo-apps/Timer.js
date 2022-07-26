@@ -36,6 +36,7 @@ export default function Timer() {
     }
   };
 
+  //(x) | 0 - indicates x value is converted to integer
   const hrHandCal = (timerVal / 3600) | 0;
   const hrHand =
     hrHandCal.toString().length === 1 ? `0${hrHandCal}` : hrHandCal;
