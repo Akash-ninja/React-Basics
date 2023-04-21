@@ -2,9 +2,7 @@ import { useState, useEffect } from "react";
 
 export default function Timer() {
   const [timerVal, setTimerVal] = useState(0);
-
   const [toggleBtn, setToggleBtn] = useState(true);
-
   const [logTime, setLogTime] = useState([]);
 
   // Sets the timer
